@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("https://images.pexels.com/photos/630754/autumn-orange-nature-red-630754.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position-y: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.board {
+	color: #333;
+	text-align: center;
+	font-family: 'The Girl Next Door', cursive;
+	font-weight: 900;
+	h1 {
+		color: #fff;
+		text-shadow: 2px 2px 5px #000;
+	}
+}
+
+.column-container {
+	display: flex;
+	justify-content: space-evenly;
+	min-height: 30px;
+	flex-wrap: wrap;
+}
+
+.column {
+	position: relative;
+	width: 100%;
+	min-width: 250px;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	margin: 20px;
+	background: #faf9c1;
+}
+
+.column-title {
+	border-bottom: 5px solid #fff;
+	padding: 10px;
+	min-height: 50px;
+}
+
+.column-card-list {
+	list-style-type: none;
+	min-height: 50px;
+}
+.card {
+	padding: 10px;
+}
+
+.card-description {
+	display: inline-block;
+	width: 86%;
+}
+
+button {
+	color: #444;
+	background: #F0FF50;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.btn-delete {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	right: -10px;
+	border-radius: 5px;
+	width: 20px;
+}
+
+.btn-delete-column {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.create-column {
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.add-card {
+	border-radius: 10px;
+	padding: 5px;
+	width: 100%;
+}
